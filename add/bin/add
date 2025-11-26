@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'add'
+
+raise "Pass two numbers to add: #{ARGV}" if ARGV.size < 2
+
+x, y = *ARGV
+puts Add.add(Integer(x), Integer(y))

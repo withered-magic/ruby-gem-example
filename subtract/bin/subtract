@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'subtract'
+
+raise "Pass two numbers to subtract: #{ARGV}" if ARGV.size < 2
+
+x, y = *ARGV
+puts Subtract.subtract(Integer(x), Integer(y))
